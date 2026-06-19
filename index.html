@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28圈 · 日常记录与生活灵感</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f6f0;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2b27;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 820px;
+            width: 100%;
+            background: #fefcf8;
+            border-radius: 32px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+            padding: 2.8rem 2.5rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .page {
+                padding: 1.8rem 1.2rem;
+                border-radius: 24px;
+            }
+        }
+
+        /* 开场短句 —— 像一句随手写在笔记本上的话 */
+        .opening {
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            line-height: 1.4;
+            color: #3a352f;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid #e3dcd2;
+            font-weight: 400;
+        }
+        .opening em {
+            font-style: italic;
+            color: #8a7a6b;
+        }
+
+        /* 承接段落 */
+        .lead {
+            font-size: 1.05rem;
+            margin: 1.2rem 0 1.8rem 0;
+            padding: 0.25rem 0.4rem;
+            color: #4a423b;
+        }
+
+        /* 引用块 / 提示框 */
+        .notice-box {
+            background: #f3efe8;
+            border-left: 6px solid #c5b4a0;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 0.98rem;
+            color: #3e3732;
+        }
+        .notice-box strong {
+            color: #6b5a4b;
+            font-weight: 600;
+        }
+
+        /* 特点列表 —— 带项目符号，安静朴素 */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.8rem 0;
+        }
+        .feature-list li {
+            padding: 0.6rem 0 0.6rem 2rem;
+            position: relative;
+            border-bottom: 1px dashed #e7dfd6;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.5rem;
+            color: #b3a08b;
+            font-size: 1.6rem;
+            line-height: 1;
+            top: 0.35rem;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2.4rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e7dfd6;
+            font-size: 0.98rem;
+            color: #5e554b;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.3rem 0.6rem;
+        }
+
+        .closing a {
+            color: #6b5a4b;
+            text-decoration: none;
+            border-bottom: 1px solid #d6c9bc;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .closing a:hover {
+            border-bottom-color: #3a352f;
+            color: #3a352f;
+        }
+
+        /* 普通段落链接也保持相同风格 */
+        .lead a,
+        .notice-box a,
+        .feature-list a {
+            color: #6b5a4b;
+            text-decoration: none;
+            border-bottom: 1px solid #d6c9bc;
+            transition: border-color 0.2s;
+        }
+        .lead a:hover,
+        .notice-box a:hover,
+        .feature-list a:hover {
+            border-bottom-color: #3a352f;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e7dfd6;
+            margin: 1.5rem 0;
+        }
+
+        .small-meta {
+            font-size: 0.85rem;
+            color: #9a8d7e;
+            text-align: right;
+            margin-top: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 开场短句 -->
+        <div class="opening">
+            有时，一个圈子就是一段<em>连续的注视</em>。
+        </div>
+
+        <!-- 承接段落 -->
+        <p class="lead">
+            很多日常的灵感并非来自宏大的计划，而是来自一次次不刻意的回望。就像你随手画下一个圆，起点和终点终将重叠，但路径上的细节却各自不同。我们把这个过程称为「<strong>28圈</strong>」—— 一个温和的、关于持续关注与微小积累的记录方式。它不追求速成，也不标榜深刻，只是提醒你：有些东西值得反复看，反复想，反复做。
+        </p>
+
+        <!-- 提示框 / 引用块 -->
+        <div class="notice-box">
+            <strong>一个观察</strong> · 许多创作者都提到，他们最满意的作品往往出现在连续创作的第二十八天左右。不是第一天的亢奋，也不是第三十天刻意收尾，而是中间那种“手已经熟悉了，心还保持新鲜”的状态。<br>
+            如果你也好奇这种节奏，不妨去 <a href="https://portal-circle28.com">28圈</a> 看一看那里沉淀下来的日常记录与碎片思考。
+        </div>
+
+        <!-- 特点列表 —— 围绕“内容 / 主题”展开 -->
+        <ul class="feature-list">
+            <li><strong>围绕主题而非热点</strong> —— 每一篇内容都从某个长期关注的领域出发，不追逐短暂流量，只整理真正打动自己的素材与观点。</li>
+            <li><strong>文字为主，留白为伴</strong> —— 没有拥挤的弹窗或浮夸的动效，页面只负责呈现文字、图片与安静的空白，阅读节奏由你掌控。</li>
+            <li><strong>定期更新，但有弹性</strong> —— 更新频率不设硬性指标，但保持一种类似“每周几段话”的从容，偶尔跳过也不会产生负疚感。</li>
+            <li><strong>不完全归档，接受散落</strong> —— 有些内容会随着时间修改、合并或删除，留下的痕迹本身就是迭代的一部分。</li>
+        </ul>
+
+        <!-- 另一个小段落，承接列表，自然融入链接 -->
+        <p style="margin: 1.2rem 0 0.2rem 0; font-size: 1rem;">
+            如果你也在寻找一个可以慢慢逛、随手记、不用急着下结论的地方，可以打开 <a href="https://portal-circle28.com">28圈</a> 看看。它可能不会立刻改变什么，但也许会在某个平常的下午，为你提供一个安静的参照。
+        </p>
+
+        <!-- 温和结尾 -->
+        <div class="closing">
+            <span>///</span>
+            <span>愿你在自己的节奏里，多转几个温柔的圈。</span>
+            <span style="margin-left: auto; opacity: 0.7;">– 2025 · 春</span>
+        </div>
+
+        <div class="small-meta">
+            基于日常记录 · 无广告 · 无追踪
+        </div>
+    </div>
+</body>
+</html>
